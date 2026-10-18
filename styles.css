@@ -1,0 +1,161 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('https://images.stockcake.com/public/5/6/b/56bc97f4-5111-49ee-b564-a2b859090b8e/cozy-cafe-ambiance-stockcake.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header Styles */
+header{
+    background-color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+.navbar{
+  height: auto;
+
+  position: sticky;
+  top:0;
+
+  z-index: 1000;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+nav li{
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+a:hover{
+  border-bottom: 2px solid brown;
+}
+
+li:hover{
+  transform: scale(1.2);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    h2{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+    }
+
+    p{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    }  
+} 
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    p{
+    text-align: center;
+    }
+}
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    p{
+    text-align: center;
+    }
+    a{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        margin: 0.5rem 0;
+    }
+}
+
+#footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: sticky;
+    top: 100px;
+}
+
+button:hover{
+    background-color: #555;
+}
+
+@media (max-width: 700px){
+    #home, #about, #contact{
+        height: auto;
+        padding: 2rem 1rem;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+    h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
