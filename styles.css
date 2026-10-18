@@ -157,12 +157,17 @@ button:hover {
     min-height: 100vh;
     box-sizing: border-box;
   }
+  nav a{
+    font-size: 1.2rem;
+  }
   h2 {
     font-size: 2rem;
     text-align: center;
+    width: 100%;
   }
   p {
     text-align: center;
     font-size: 1rem;
+    min-width: 100%;
   }
 }
