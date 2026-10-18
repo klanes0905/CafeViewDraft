@@ -148,6 +148,30 @@ button:hover {
   background-color: #555;
 }
 
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(46, 43, 43, 0.493);
+    box-shadow: 3px 3px 5px #6b6363;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    backdrop-filter: blur(5px);
+}
+
+.sidebar li{
+    width: 100%;
+}
+.menu{
+    display: none;
+}
+
 @media (max-width: 700px) {
   #home,
   #about,
@@ -157,9 +181,6 @@ button:hover {
     min-height: 100vh;
     box-sizing: border-box;
   }
-  nav a{
-    font-size: 1.2rem;
-  }
   h2 {
     font-size: 2rem;
     text-align: center;
@@ -167,7 +188,29 @@ button:hover {
   }
   p {
     text-align: center;
-    font-size: 1rem;
     min-width: 100%;
+    font-size: 1rem;
   }
+  nav ul {
+    flex-direction: column;
+    align-items: end;
+  }
+  .sidebar {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    nav ul:not(.sidebar) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
 }
