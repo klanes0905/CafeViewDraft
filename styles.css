@@ -82,8 +82,17 @@ nav li:first-child {
   justify-content: center;
   height: 100vh;
   background-color: #f4ae52;
-  position: relative; /* Added to keep absolute items contained within #about */
+  position: relative; 
   overflow: hidden;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(to left, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(to top, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  
+  background-size: 40px 40px;
+
+  animation: moveGrid 1s linear infinite;
 
   h2 {
     font-size: 3rem;
@@ -100,6 +109,7 @@ nav li:first-child {
     z-index: 2;
     text-shadow: 2.5px 1px 10px rgba(0, 0, 0, 0.7);
   }
+
   .pasta{
     position: absolute;
     top: 420px;
@@ -189,6 +199,15 @@ nav li:first-child {
   justify-content: center;
   height: 100vh;
   background-color: #d4621a;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(to left, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(to top, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  
+  background-size: 40px 40px;
+
+  animation: moveGrid1 1s linear infinite;
 
   h2 {
     font-size: 3rem;
@@ -393,4 +412,20 @@ button:hover {
 @keyframes rot{
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
+}
+@keyframes moveGrid {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+@keyframes moveGrid1 {
+  0% {
+    background-position: 40px 40px;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
