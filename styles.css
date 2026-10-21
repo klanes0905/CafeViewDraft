@@ -2,14 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family:
-    akaya kanadaka,
-    cursive;
+  font-family: "Roboto";
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  background-image: url("https://images.stockcake.com/public/5/6/b/56bc97f4-5111-49ee-b564-a2b859090b8e/cozy-cafe-ambiance-stockcake.jpg");
-  background-size: cover;
+  background-image: url("https://thumbs.dreamstime.com/b/cartoon-hand-drawn-doodles-subject-cafe-coffee-shop-theme-seamless-pattern-colorful-detailed-lots-objects-vec-126972457.jpg");
+  background-size: contain;
   background-position: center;
 }
 
@@ -22,10 +20,8 @@ header {
 }
 .navbar {
   height: auto;
-
   position: sticky;
   top: 0;
-
   z-index: 1000;
 }
 nav ul {
@@ -86,6 +82,8 @@ nav li:first-child {
   justify-content: center;
   height: 100vh;
   background-color: #f4ae52;
+  position: relative; /* Added to keep absolute items contained within #about */
+  overflow: hidden;
 
   h2 {
     font-size: 3rem;
@@ -95,6 +93,55 @@ nav li:first-child {
     width: 60%;
     font-size: 2rem;
     text-align: center;
+  }
+  .pasta{
+    position: absolute;
+    top: 120px;
+    left: 550px;
+    animation: rot 5s linear infinite;
+    transform-origin: center;
+  }
+  .coffee{
+    position: absolute;
+    top: 135px;
+    left: 1500px;
+    animation: rot 5s linear infinite;
+    transform-origin: center;
+  }
+  .bean{
+    position: absolute;
+    top: 500px;
+    left: 250px;
+    animation: rot 5s linear infinite;
+    transform-origin: center;
+  }
+  .crosa{
+    position: absolute;
+    top: 800px;
+    left: 1400px;
+    animation: rot 5s infinite;
+    transform-origin: center;
+  }
+  .bread{
+    position: absolute;
+    top: 700px;
+    left: 820px;
+    animation: rot 5s infinite;
+    transform-origin: center;
+  }
+  .burger{
+    position: absolute;
+    top: 600px;
+    left: 420px;
+    animation: rot 5s infinite;
+    transform-origin: center;
+  }
+  .cake{
+    position: absolute;
+    top: 350px;
+    left: 1220px;
+    animation: rot 5s infinite;
+    transform-origin: center;
   }
 }
 
@@ -242,4 +289,51 @@ button:hover {
     align-items: center;
     justify-content: flex-end;
   }
+
+  /* Media query updates for floating/absolute about elements */
+  #about {
+    .pasta {
+      top: 50px;
+      left: 20px;
+      transform: scale(0.6);
+    }
+    .coffee {
+      top: 80px;
+      left: auto;
+      right: 20px;
+      transform: scale(0.6);
+    }
+    .bean {
+      top: 25%;
+      left: 10px;
+      transform: scale(0.6);
+    }
+    .crosa {
+      top: 75%;
+      left: auto;
+      right: 20px;
+      transform: scale(0.6);
+    }
+    .bread {
+      top: 10%;
+      left: 50%;
+      transform: scale(0.6);
+    }
+    .burger {
+      top: 80%;
+      left: 20px;
+      transform: scale(0.6);
+    }
+    .cake {
+      top: 25%;
+      left: auto;
+      right: 30px;
+      transform: scale(0.6);
+    }
+  }
+}
+
+@keyframes rot{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
