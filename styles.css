@@ -102,7 +102,7 @@ nav li:first-child {
   }
   .pasta{
     position: absolute;
-    top: 120px;
+    top: 420px;
     left: 550px;
     animation: rot 5s linear infinite;
     transform-origin: center;
@@ -110,7 +110,7 @@ nav li:first-child {
   }
   .coffee{
     position: absolute;
-    top: 135px;
+    top: 405px;
     left: 1500px;
     animation: rot 5s linear infinite;
     transform-origin: center;
@@ -120,15 +120,15 @@ nav li:first-child {
     position: absolute;
     top: 500px;
     left: 250px;
-    animation: rot 5s linear infinite;
+    animation: rot 10s linear infinite;
     transform-origin: center;
     z-index: 1;
   }
   .crosa{
     position: absolute;
-    top: 800px;
-    left: 1400px;
-    animation: rot 5s infinite;
+    top: 500px;
+    left: 1200px;
+    animation: rot 10s infinite;
     transform-origin: center;
     z-index: 1;
   }
@@ -151,7 +151,31 @@ nav li:first-child {
   .cake{
     position: absolute;
     top: 350px;
-    left: 1220px;
+    left: 1020px;
+    animation: rot 10s infinite;
+    transform-origin: center;
+    z-index: 1;
+  }
+  .cupcake{
+    position: absolute;
+    top: 350px;
+    left: 320px;
+    animation: rot 10s infinite;
+    transform-origin: center;
+    z-index: 1;
+  }
+  .toast{
+    position: absolute;
+    top: 550px;
+    left: 1420px;
+    animation: rot 5s infinite;
+    transform-origin: center;
+    z-index: 1;
+  }
+  .pancake{
+    position: absolute;
+    top: 550px;
+    left: 820px;
     animation: rot 5s infinite;
     transform-origin: center;
     z-index: 1;
@@ -343,6 +367,24 @@ button:hover {
       top: 10%;
       left: auto;
       right: 20px;
+      transform: scale(0.6);
+    }
+    .cupcake{
+      top: 30%;
+      left: auto;
+      right: 20px;
+      transform: scale(0.6);
+    }
+    .toast{
+      top: 1%;
+      left: auto;
+      right: 90px;
+      transform: scale(0.6);
+    }
+    .pancake{
+      top: 40%;
+      left: auto;
+      right: 90px;
       transform: scale(0.6);
     }
   }
