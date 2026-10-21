@@ -293,30 +293,30 @@ button:hover {
   /* Media query updates for floating/absolute about elements */
   #about {
     .pasta {
-      top: 50px;
+      top: -50px;
       left: 20px;
       transform: scale(0.6);
     }
     .coffee {
       top: 80px;
       left: auto;
-      right: 20px;
+      right: -40px;
       transform: scale(0.6);
     }
     .bean {
       top: 25%;
-      left: 10px;
+      left: -50px;
       transform: scale(0.6);
     }
     .crosa {
       top: 75%;
       left: auto;
-      right: 20px;
+      right: -30px;
       transform: scale(0.6);
     }
     .bread {
       top: 10%;
-      left: 50%;
+      left: -50px;
       transform: scale(0.6);
     }
     .burger {
