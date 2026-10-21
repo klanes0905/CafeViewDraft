@@ -316,12 +316,12 @@ button:hover {
     }
     .bread {
       top: 10%;
-      left: -50px;
+      left: -40px;
       transform: scale(0.6);
     }
     .burger {
-      top: 80%;
-      left: -50px;
+      top: 95%;
+      left: 90px;
       transform: scale(0.6);
     }
     .cake {
